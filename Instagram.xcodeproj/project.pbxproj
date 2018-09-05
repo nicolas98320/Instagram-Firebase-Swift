@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37169255213ED1D20072685E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169254213ED1D20072685E /* Theme.swift */; };
+		37169257213ED2CC0072685E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169256213ED2CC0072685E /* UIColor.swift */; };
+		37169259213ED36E0072685E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169258213ED36E0072685E /* UIView.swift */; };
 		379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */; };
 		379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC1B211D3ED200BDA7A5 /* ViewController.swift */; };
 		379DAC1F211D3ED200BDA7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC1D211D3ED200BDA7A5 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37169254213ED1D20072685E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		37169256213ED2CC0072685E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		37169258213ED36E0072685E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		379DAC16211D3ED200BDA7A5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379DAC1B211D3ED200BDA7A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3716925A213ED3910072685E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				37169254213ED1D20072685E /* Theme.swift */,
+				3716925B213ED39A0072685E /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3716925B213ED39A0072685E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37169256213ED2CC0072685E /* UIColor.swift */,
+				37169258213ED36E0072685E /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		379DAC0D211D3ED200BDA7A5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,7 @@
 				379DAC20211D3ED300BDA7A5 /* Assets.xcassets */,
 				379DAC22211D3ED300BDA7A5 /* LaunchScreen.storyboard */,
 				379DAC25211D3ED300BDA7A5 /* Info.plist */,
+				3716925A213ED3910072685E /* Utils */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -197,6 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37169259213ED36E0072685E /* UIView.swift in Sources */,
+				37169255213ED1D20072685E /* Theme.swift in Sources */,
+				37169257213ED2CC0072685E /* UIColor.swift in Sources */,
 				379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */,
 				379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */,
 			);
