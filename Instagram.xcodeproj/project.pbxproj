@@ -11,6 +11,7 @@
 		37169255213ED1D20072685E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169254213ED1D20072685E /* Theme.swift */; };
 		37169257213ED2CC0072685E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169256213ED2CC0072685E /* UIColor.swift */; };
 		37169259213ED36E0072685E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37169258213ED36E0072685E /* UIView.swift */; };
+		37176E632142C54B00FDE457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37176E622142C54B00FDE457 /* GoogleService-Info.plist */; };
 		379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */; };
 		379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC1B211D3ED200BDA7A5 /* ViewController.swift */; };
 		379DAC1F211D3ED200BDA7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC1D211D3ED200BDA7A5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		37169254213ED1D20072685E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		37169256213ED2CC0072685E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		37169258213ED36E0072685E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		37176E622142C54B00FDE457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		379DAC16211D3ED200BDA7A5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379DAC1B211D3ED200BDA7A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */,
 				379DAC25211D3ED300BDA7A5 /* Info.plist */,
+				37176E622142C54B00FDE457 /* GoogleService-Info.plist */,
 				379DAC1B211D3ED200BDA7A5 /* ViewController.swift */,
 				376D52142140BB8D005CEA44 /* Ressources */,
 				376D52132140BB7B005CEA44 /* Storyboards */,
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				379DAC24211D3ED300BDA7A5 /* LaunchScreen.storyboard in Resources */,
+				37176E632142C54B00FDE457 /* GoogleService-Info.plist in Resources */,
 				379DAC21211D3ED300BDA7A5 /* Assets.xcassets in Resources */,
 				379DAC1F211D3ED200BDA7A5 /* Main.storyboard in Resources */,
 			);
