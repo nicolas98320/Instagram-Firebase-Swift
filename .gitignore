@@ -1,4 +1,5 @@
-Instagram.xcodeproj/project.xcworkspace/xcuserdata/
-Instagram.xcodeproj/xcuserdata/
-Instagram.xcworkspace/xcuserdata/
+.DS_Store
 Pods/
+xcuserdata/
+*.xcworkspace/
+GoogleService-Info.plist
