@@ -12,6 +12,7 @@ public class Theme {
   
   public struct Color {
     public static let blue = UIColor(string: "95CCF4")
+    public static let validBlue = UIColor(string: "119AED")
   }
   
   public struct Font {
