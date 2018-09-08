@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     textField.backgroundColor = UIColor(white: 0, alpha: 0.03)
     textField.borderStyle = .roundedRect
     textField.font = UIFont.systemFont(ofSize: 14)
+    textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
     return textField
   }()
   
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
     textField.backgroundColor = UIColor(white: 0, alpha: 0.03)
     textField.borderStyle = .roundedRect
     textField.font = UIFont.systemFont(ofSize: 14)
+    textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
     return textField
   }()
   
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
     textField.backgroundColor = UIColor(white: 0, alpha: 0.03)
     textField.borderStyle = .roundedRect
     textField.font = UIFont.systemFont(ofSize: 14)
+    textField.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
     return textField
   }()
   
@@ -52,8 +55,29 @@ class ViewController: UIViewController {
     button.layer.cornerRadius = 5
     button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
     button.setTitleColor(.white, for: .normal)
+    button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
+    button.isEnabled = false
     return button
   }()
+  
+  @objc func handleTextInputChange() {
+    let isFormValid = emailTextField.text?.isEmpty != true && usernameTextField.text?.isEmpty != true && passwordTextField.text?.isEmpty != true
+    if isFormValid {
+      signUpButton.isEnabled = true
+      signUpButton.backgroundColor = Theme.Color.validBlue
+    } else {
+      signUpButton.isEnabled = false
+      signUpButton.backgroundColor = Theme.Color.blue
+    }
+  }
+  
+  @objc func handleSignUp() {
+    guard let email = emailTextField.text, !email.isEmpty else { return }
+    guard let username = usernameTextField.text, !username.isEmpty else { return }
+    guard let password = passwordTextField.text, !password.isEmpty else { return }
+    
+    // TODO: - Firebase auth
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
