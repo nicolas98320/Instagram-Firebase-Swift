@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ViewController: UIViewController {
   
@@ -76,7 +77,13 @@ class ViewController: UIViewController {
     guard let username = usernameTextField.text, !username.isEmpty else { return }
     guard let password = passwordTextField.text, !password.isEmpty else { return }
     
-    // TODO: - Firebase auth
+    Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error: Error?) in
+      if let err = error {
+        print("Failed to create user:", err)
+        return
+      }
+      print("Successfully created user:", user?.user.uid ?? "")
+    })
   }
   
   override func viewDidLoad() {
