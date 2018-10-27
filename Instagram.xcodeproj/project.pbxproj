@@ -14,6 +14,10 @@
 		37176E632142C54B00FDE457 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37176E622142C54B00FDE457 /* GoogleService-Info.plist */; };
 		37218C5821847E1800A34490 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C5721847E1800A34490 /* MainTabBarController.swift */; };
 		37218C5A21847E3800A34490 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C5921847E3800A34490 /* UserProfileController.swift */; };
+		37218C5C218489CD00A34490 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C5B218489CD00A34490 /* UserProfileHeader.swift */; };
+		37218C5F21848D0600A34490 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C5E21848D0600A34490 /* NSObject.swift */; };
+		37218C6121848D3A00A34490 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C6021848D3A00A34490 /* ReuseIdentifier.swift */; };
+		37218C642184988F00A34490 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C632184988F00A34490 /* User.swift */; };
 		379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */; };
 		379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC1B211D3ED200BDA7A5 /* ViewController.swift */; };
 		379DAC1F211D3ED200BDA7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC1D211D3ED200BDA7A5 /* Main.storyboard */; };
@@ -41,6 +45,10 @@
 		37176E622142C54B00FDE457 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		37218C5721847E1800A34490 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		37218C5921847E3800A34490 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		37218C5B218489CD00A34490 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
+		37218C5E21848D0600A34490 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		37218C6021848D3A00A34490 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
+		37218C632184988F00A34490 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		379DAC16211D3ED200BDA7A5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		379DAC1B211D3ED200BDA7A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +89,7 @@
 		3716925A213ED3910072685E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				37218C6021848D3A00A34490 /* ReuseIdentifier.swift */,
 				37169254213ED1D20072685E /* Theme.swift */,
 				3716925B213ED39A0072685E /* Extensions */,
 			);
@@ -92,6 +101,7 @@
 			children = (
 				37169256213ED2CC0072685E /* UIColor.swift */,
 				37169258213ED36E0072685E /* UIView.swift */,
+				37218C5E21848D0600A34490 /* NSObject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -104,6 +114,22 @@
 				379DAC1B211D3ED200BDA7A5 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37218C5D218489D400A34490 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37218C5B218489CD00A34490 /* UserProfileHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37218C622184987E00A34490 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37218C632184988F00A34490 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		376D52132140BB7B005CEA44 /* Storyboards */ = {
@@ -149,6 +175,8 @@
 				379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */,
 				379DAC25211D3ED300BDA7A5 /* Info.plist */,
 				37176E622142C54B00FDE457 /* GoogleService-Info.plist */,
+				37218C622184987E00A34490 /* Models */,
+				37218C5D218489D400A34490 /* Views */,
 				37218C5621847E0000A34490 /* Controllers */,
 				376D52142140BB8D005CEA44 /* Ressources */,
 				376D52132140BB7B005CEA44 /* Storyboards */,
@@ -357,10 +385,14 @@
 				37169259213ED36E0072685E /* UIView.swift in Sources */,
 				37169255213ED1D20072685E /* Theme.swift in Sources */,
 				37218C5821847E1800A34490 /* MainTabBarController.swift in Sources */,
+				37218C6121848D3A00A34490 /* ReuseIdentifier.swift in Sources */,
+				37218C5F21848D0600A34490 /* NSObject.swift in Sources */,
+				37218C5C218489CD00A34490 /* UserProfileHeader.swift in Sources */,
 				37169257213ED2CC0072685E /* UIColor.swift in Sources */,
 				37218C5A21847E3800A34490 /* UserProfileController.swift in Sources */,
 				379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */,
 				379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */,
+				37218C642184988F00A34490 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
