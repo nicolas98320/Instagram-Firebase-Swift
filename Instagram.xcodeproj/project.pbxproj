@@ -18,8 +18,9 @@
 		37218C5F21848D0600A34490 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C5E21848D0600A34490 /* NSObject.swift */; };
 		37218C6121848D3A00A34490 /* ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C6021848D3A00A34490 /* ReuseIdentifier.swift */; };
 		37218C642184988F00A34490 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C632184988F00A34490 /* User.swift */; };
+		37218C662184A1D800A34490 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37218C652184A1D800A34490 /* LoginController.swift */; };
 		379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */; };
-		379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC1B211D3ED200BDA7A5 /* ViewController.swift */; };
+		379DAC1C211D3ED200BDA7A5 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC1B211D3ED200BDA7A5 /* SignUpController.swift */; };
 		379DAC1F211D3ED200BDA7A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC1D211D3ED200BDA7A5 /* Main.storyboard */; };
 		379DAC21211D3ED300BDA7A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC20211D3ED300BDA7A5 /* Assets.xcassets */; };
 		379DAC24211D3ED300BDA7A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC22211D3ED300BDA7A5 /* LaunchScreen.storyboard */; };
@@ -49,9 +50,10 @@
 		37218C5E21848D0600A34490 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		37218C6021848D3A00A34490 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 		37218C632184988F00A34490 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		37218C652184A1D800A34490 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		379DAC16211D3ED200BDA7A5 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		379DAC19211D3ED200BDA7A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		379DAC1B211D3ED200BDA7A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		379DAC1B211D3ED200BDA7A5 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		379DAC1E211D3ED200BDA7A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		379DAC20211D3ED300BDA7A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		379DAC23211D3ED300BDA7A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +113,8 @@
 			children = (
 				37218C5721847E1800A34490 /* MainTabBarController.swift */,
 				37218C5921847E3800A34490 /* UserProfileController.swift */,
-				379DAC1B211D3ED200BDA7A5 /* ViewController.swift */,
+				379DAC1B211D3ED200BDA7A5 /* SignUpController.swift */,
+				37218C652184A1D800A34490 /* LoginController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37169259213ED36E0072685E /* UIView.swift in Sources */,
+				37218C662184A1D800A34490 /* LoginController.swift in Sources */,
 				37169255213ED1D20072685E /* Theme.swift in Sources */,
 				37218C5821847E1800A34490 /* MainTabBarController.swift in Sources */,
 				37218C6121848D3A00A34490 /* ReuseIdentifier.swift in Sources */,
@@ -390,7 +394,7 @@
 				37218C5C218489CD00A34490 /* UserProfileHeader.swift in Sources */,
 				37169257213ED2CC0072685E /* UIColor.swift in Sources */,
 				37218C5A21847E3800A34490 /* UserProfileController.swift in Sources */,
-				379DAC1C211D3ED200BDA7A5 /* ViewController.swift in Sources */,
+				379DAC1C211D3ED200BDA7A5 /* SignUpController.swift in Sources */,
 				379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */,
 				37218C642184988F00A34490 /* User.swift in Sources */,
 			);
