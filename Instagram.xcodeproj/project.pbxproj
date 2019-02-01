@@ -32,6 +32,7 @@
 		379DAC21211D3ED300BDA7A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC20211D3ED300BDA7A5 /* Assets.xcassets */; };
 		379DAC24211D3ED300BDA7A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379DAC22211D3ED300BDA7A5 /* LaunchScreen.storyboard */; };
 		379DAC2F211D3ED400BDA7A5 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DAC2E211D3ED400BDA7A5 /* InstagramUITests.swift */; };
+		84CC57152204FEF400ED98D7 /* FirebaseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC57142204FEF400ED98D7 /* FirebaseUtils.swift */; };
 		8C77A4767EFD3C806DDCDD63 /* Pods_InstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24CDAE5389CF721AD0849E4 /* Pods_InstagramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		379DAC2E211D3ED400BDA7A5 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		379DAC30211D3ED400BDA7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A766BC13DDB234AD16BF448 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		84CC57142204FEF400ED98D7 /* FirebaseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUtils.swift; sourceTree = "<group>"; };
 		8EF4A75474952825D3BE30E1 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		B18189AF7020E8DB4F6A1A78 /* Pods-InstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InstagramUITests/Pods-InstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B24CDAE5389CF721AD0849E4 /* Pods_InstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,7 @@
 		3716925A213ED3910072685E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				84CC57142204FEF400ED98D7 /* FirebaseUtils.swift */,
 				37218C6021848D3A00A34490 /* ReuseIdentifier.swift */,
 				37169254213ED1D20072685E /* Theme.swift */,
 				3716925B213ED39A0072685E /* Extensions */,
@@ -440,6 +443,7 @@
 				37218C5A21847E3800A34490 /* UserProfileController.swift in Sources */,
 				37594045218718A3001E8851 /* HomeController.swift in Sources */,
 				379DAC1C211D3ED200BDA7A5 /* SignUpController.swift in Sources */,
+				84CC57152204FEF400ED98D7 /* FirebaseUtils.swift in Sources */,
 				37594047218718C7001E8851 /* HomePostCell.swift in Sources */,
 				379DAC1A211D3ED200BDA7A5 /* AppDelegate.swift in Sources */,
 				37218C642184988F00A34490 /* User.swift in Sources */,
