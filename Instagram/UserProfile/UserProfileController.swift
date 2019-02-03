@@ -13,13 +13,12 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     
     var user: User?
     var posts = [Post]()
+    var userId: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView?.backgroundColor = .white
-        
-        navigationItem.title = "username"
         
         collectionView?.register(UserProfileHeader.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: UserProfileHeader.nameOfClass)
         collectionView?.register(UserProfilePhotoCell.self, forCellWithReuseIdentifier: UserProfilePhotoCell.nameOfClass)
@@ -107,7 +106,7 @@ class UserProfileController: UICollectionViewController, UICollectionViewDelegat
     }
     
     fileprivate func fetchUser() {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
+        let uid = userId ?? (Auth.auth().currentUser?.uid ?? "")
         
         Database.fetchUserWithUID(uid: uid) { (user) in
             self.user = user
