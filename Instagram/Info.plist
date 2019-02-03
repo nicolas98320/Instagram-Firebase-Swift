@@ -43,5 +43,7 @@
 	</array>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>$(PRODUCT_NAME) needs to access to your Photo Library</string>
+    <key>NSCameraUsageDescription</key>
+    <string>$(PRODUCT_NAME) needs to access the camera to take photos</string>
 </dict>
 </plist>
